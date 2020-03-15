@@ -176,6 +176,11 @@ background-size: cover;
     padding-left: 4.5rem;
 }
 
+.servicios .iconos:hover .service-icon {
+    background-color: #ffffff;
+    color: #03C4EB;
+}
+
 
 /* Paralax */
 .paralax {

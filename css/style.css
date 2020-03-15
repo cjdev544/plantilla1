@@ -203,9 +203,95 @@ background-size: cover;
 
 
 /* Portafolio */
-.portafolio-img img {
-    max-height: 100%;
-    width: auto;
+.portafolio1 {
+    background-image: url(../img/portfolio-1.jpg);
+}
+.portafolio2 {
+    background-image: url(../img/portfolio-2.jpg);
+}
+.portafolio3 {
+    background-image: url(../img/portfolio-3.jpg);
+}
+.portafolio4 {
+    background-image: url(../img/portfolio-4.jpg);
+}
+.portafolio5 {
+    background-image: url(../img/portfolio-5.jpg);
+}
+.portafolio6 {
+    background-image: url(../img/portfolio-6.jpg);
+}
+.portafolio7 {
+    background-image: url(../img/portfolio-7.jpg);
+}
+.portafolio8 {
+    background-image: url(../img/portfolio-8.jpg);
+}
+
+.portafolio-item {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 260px;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+}
+
+.portafolio .detalles {
+    opacity: 0;
+    background-color: #ffffff;
+    height: 260px;
+    vertical-align: middle;
+    display: table-cell;
+    transition: .3s;
+}
+
+.portafolio-item .detalles h4 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+    transition: opacity 0.4s, transform 0.4s;
+    transition: opacity 0.4s, -webkit-transform 0.4s;
+    transform: translate3d(0, -20px, 0);
+    -webkit-transform: translate3d(0, -20px, 0);
+}
+
+.portafolio-item .detalles p {
+    font-size: 13px;
+    color: #666666;
+    transition: opacity 0.4s, transform 0.4s;
+    transition: opacity 0.4s, -webkit-transform 0.4s;
+    transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
+    transform: translate3d(0, 20px, 0);
+    -webkit-transform: translate3d(0, 20px, 0);
+}
+
+.portafolio a:hover {
+    text-decoration: none;
+}
+
+.portafolio-item:hover h4 {
+    text-decoration: none;
+}
+
+.portafolio-item:hover .detalles {
+    opacity: 0.8;
+}
+
+.portafolio-item:hover .detalles h4 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.portafolio-item:hover .detalles p {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.portafolio-item:hover .detalles {
+    text-decoration: none;
 }
 
 

@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-h2 {
+h3 {
     font-size: 2rem;
     color: #111;
     font-weight: 700;
@@ -90,6 +90,21 @@ background-size: cover;
     font-size: 6rem;
     letter-spacing: 10px;
     padding-bottom: 2rem;
+}
+
+.hero h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    color: #999999;
+}
+
+.hero h2 .rotating {
+    display: inline-block;
+}
+ 
+.hero .rotating > .animated {
+    display: inline-block;
 }
 
 /* Menu */

@@ -6,6 +6,13 @@ var scroll = new SmoothScroll('a[href*="#"]', {
     speedAsDuration: false  // En true todos los scroll duran lo mismo
 });
 
+// Hero rotating texts
+$("#inicio .rotating").Morphext({
+    animation: "flipInX",
+    separator: ",",
+    speed: 3000
+  });
+
 
 // Animaciones generales
 

@@ -1,0 +1,339 @@
+
+/* Generales */
+#inicio::before,
+#nosotros::before,
+#servicios::before,
+#portafolio::before,
+#testimonios::before,
+#equipo::before,
+#contacto::before {
+    content: '';
+    display: block;
+    height: 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #111;
+    font-weight: 700;
+}
+
+p {
+    line-height: 26px;
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.separador::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: .2rem; 
+    background-color: #03C4EB;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: .7rem;
+}
+
+
+/* Botones */
+.btn-primary {
+    color: #ffffff;
+    background-color: #03C4EB!important;
+    border: 3px solid #03C4EB!important;
+    border-radius: 2px;
+    margin-right: 2rem;
+}
+
+.header .btn-primary:hover {
+    background-color: transparent!important;
+    border: 3px solid #ffffff!important;
+}
+
+.contacto .btn-primary:hover {
+    background-color: #63dbf3!important;
+    border: 3px solid #63dbf3!important;
+}
+
+.btn-secondary {
+    background-color: transparent!important;
+    border: 3px solid #ffffff!important;
+    border-radius: 2px;
+}
+
+.btn-secondary:hover {
+    background-color: #03C4EB!important;
+    border: 3px solid #03C4EB!important;
+}
+
+/* Header */
+.hero {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../img/hero-bg.jpg);
+height: 40rem;
+background-position: top center;
+background-size: cover;
+}
+
+.logo span {
+    font-family: 'Spicy Rice', cursive;
+    font-size: 6rem;
+    letter-spacing: 10px;
+    padding-bottom: 2rem;
+}
+
+/* Menu */
+.header-scroll {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-family: 'Spicy Rice', cursive;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.85)!important;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.nav-link {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 3rem;
+}
+
+@media (min-width: 768px) {
+    .nav-link {
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 0 3rem;
+    }
+}
+
+.navbar-brand { 
+    margin-right: 8rem;
+}
+
+
+/* Nosotros */
+.about-img {
+    background-image: url(../img/about-img.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 35rem;
+}
+
+
+/* Servicios */
+.servicios {
+    background-image: 
+      linear-gradient(
+        rgba(256, 256, 256, 0.8),
+        rgba(256, 256, 256, 0.8)
+      ),
+      url(../img/services-bg.jpg);
+  min-height: 40rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.service-icon {
+    color: #ffffff;
+    font-size: 1.3rem;
+    float: left;
+    background: #03C4EB;
+    padding: 14px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #03C4EB;
+}
+
+.servicios h5,
+.servicios p {
+    padding-left: 4.5rem;
+}
+
+
+/* Paralax */
+.paralax {
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../img/subscribe-bg.jpg);
+  min-height: 20rem;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+} 
+
+.paralax .content {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+}
+
+
+/* Portafolio */
+.portafolio-img img {
+    max-height: 100%;
+    width: auto;
+}
+
+
+/* Testimonios */
+.testimonios {
+    background-color: #f6f6f6;
+}
+
+.testimonios .card {
+    border: none;
+    background-color: #f6f6f6;
+}
+
+.testimonios .card img {
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+.testimonios .card-title {
+    color: #03C4EB;
+}
+
+.testimonio-content p {
+    padding: 3rem;
+    background-color: #ffffff;
+    font-style: italic;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.testimonio-content .up img {
+    margin-top: -1.5rem;
+}
+
+.testimonio-content .down img {
+    margin-top: .8rem;
+}
+
+.testimonios .cambio1 {
+    order: 1;
+} 
+
+@media (min-width: 768px) {
+    .testimonios .cambio1 {
+        order: unset;
+    }
+}
+
+
+/* Equipo */
+.equipo .card {
+ border: none;
+}
+
+.equipo .card-title {
+    font-size: 1.2rem;
+    color: #666666;
+    padding-bottom: 0;
+    padding-top: 1rem;
+}
+
+.equipo .card-body p {
+    font-size: .8rem;
+}
+
+.equipo .card-footer {
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    padding: 0;
+}
+
+.equipo .card-footer a {
+    color: #bdbdbd;
+    font-size: 1.2rem;
+}
+
+.equipo .card-footer a:hover {
+    color: #03C4EB;
+}
+
+.equipo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contacto */
+.contacto {
+    background-color: #f6f6f6;
+}
+
+.contacto p {
+    margin-top: 1.5rem;
+}
+
+.contacto .contact-icon:first-child {
+    margin-top: 20px;
+}
+
+.contact-icon {
+    color: #03C4EB;
+    font-size: 2rem;
+    float: left;
+    padding-right: 20px;
+    margin-top: 0;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #111111;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #03C4EB;
+    font-size: 1rem;
+    padding-left: .5rem;
+}
+
+
+/*----------------------- 
+    Animaciones
+-------------------------*/  
+.ocultar {
+    opacity: 0;
+}
+
+.animado1 {
+    animation-delay: .1s;
+}
+
+.animado2 {
+    animation-delay: .4s;
+}
